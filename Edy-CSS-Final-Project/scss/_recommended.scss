@@ -1,0 +1,71 @@
+.recommended {
+  background: #f9f7fa;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+
+  & > h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #9a0f98;
+  }
+
+  .course-cards {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+
+    &__column {
+      flex-basis: 31%;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #ffc0cb;
+      margin-bottom: 5%;
+      padding: 20px 12px;
+      box-sizing: border-box;
+
+      &:hover {
+        box-shadow: 0 0 20px 0px #9a0f98;
+      }
+
+      & > img {
+        position: absolute;
+        margin-top: -30px;
+        width: 2%;
+      }
+
+      & > h2 {
+        text-align: end;
+        font-weight: 700;
+        font-size: 20px;
+        margin: 10px 10px;
+        color: #9a0f98;
+      }
+
+      & > p {
+        text-align: end;
+        font-weight: 300;
+        font-size: 15px;
+        margin: 10px 10px;
+      }
+
+      & > ul {
+        text-align: start;
+        font-weight: 600;
+        font-size: 15px;
+        list-style-type: circle;
+        list-style-position: inside;
+        line-height: 20px;
+        margin-left: 10px;
+
+        & > li::marker {
+          color: hotpink;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+Section "home-section" (1) - Am adaugat un buton de navigatie 
+functional cu ajutorul JavaScript-ului si care este responsive. 
+Mai jos in <main> am adaugat o transitie la imagine si butoane.
+
+Section "Our study tracks" (2) - Am adaugat transitiile necesare conforme
+ghidului de styling pe discurile de imagini. Responsive pe mobile.
+
+Section "study-tracks__robots" (3) - Am adaugat transitiile necesare conforme
+ghidului de styling pe discurile de imagini. Si in plus un border pentru a
+evidentia imaginea pe care este cursorul. Responsive pe mobile.
+
+Section "how-it-works" (4) - Am adaugat transitiile necesare conforme
+ghidului de styling pe discurile de imagini. Si in plus un border pentru a
+evidentia imaginea pe care este cursorul. Responsive pe mobile.
+
+Section "what-will-learn" (5) - Am adaugat transitiile necesare conforme
+ghidului de styling pe imagini. NU este responsive pe mobile
+pentru ca nu am stiut cum sa fac sectiunea asta sa fie...
+
+Section "recommended" (6) - Am incercat sa arate ca originalul, in plus am adaugat 
+un efect de hover pe card-uri pentru a evidentia pe ce este cursorul. Responsive
+pe mobile.
+
+Section "bundles" (7) - Am incercat sa raman strict ca originalul, in plus am adaugat
+un efect de hover pe "Sign Up" si in special pe cel "Recommended" pentru a evidentia
+mai mult ce este mai eficient de cumparat. Responsive pe mobile.
+
+Section "contact" (8) - Aici am ramas stric pe origini, in plus am adaugat
+un efect de hover pe butonul de "Send" si pe imagine. Responsive pe mobile.
+
+Sectiom "footer" (9) - Am incercat sa raman la origini, in plus am adaugat un efect
+ de hover pe butoanele de nav si folosind Font Awesome pe iconitele de social-media.
+ Responsive pe mobile.
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+.study-tracks {
+  background: #fff;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+
+  &__short-line {
+    position: absolute;
+    width: 5%;
+    height: 1px;
+    background-color: #e858ae;
+    left: 47vw;
+    padding: 1px;
+  }
+
+  & > h1 {
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #9a0f98;
+  }
+
+  &__desc {
+    padding-top: 10px;
+    width: 50%;
+    margin: auto;
+    font-size: 10px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__experiences {
+    width: 10%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &-section {
+      flex-basis: 31%;
+      border-radius: 10px;
+      margin-bottom: 5%;
+      padding: 40px 50px;
+      box-sizing: border-box;
+      //   margin: 5vw;
+
+      & > img {
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+          transform: rotate(180deg);
+          transform: scaleX(-1);
+        }
+      }
+
+      & > h3 {
+        font-size: 20px;
+        font-weight: 300;
+        padding-bottom: 10px;
+        color: #9a0f98;
+      }
+
+      & > p {
+        font-size: 15px;
+        font-weight: 600;
+        text-align: start;
+        line-height: 15px;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .study-tracks__experiences {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__robots {
+    background: linear-gradient(to bottom, #fff, $secondary-color);
+
+    & > h1 {
+      text-align: center;
+      padding-bottom: 10px;
+      font-size: 30px;
+      font-weight: 300;
+      color: #9a0f98;
+    }
+
+    &-images {
+      margin-top: 2%;
+      display: flex;
+      justify-content: space-evenly;
+
+      & > img {
+        background: transparent;
+        flex-basis: 31%; //----sets the initial main size of a flex item-----//
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+
+        &:hover {
+          background: #9a0f98;
+          transform: scale(1.15);
+        }
+      }
+    }
+  }
+}

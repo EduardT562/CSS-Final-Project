@@ -1,0 +1,41 @@
+@import "config";
+@import "home";
+@import "nav";
+@import "responsive";
+@import "tracks";
+@import "works";
+@import "whatlearn";
+@import "recommended";
+@import "bundles";
+@import "contact";
+@import "footer";
+
+.home-body {
+  background: linear-gradient(to left, $primary-color, $secondary-color);
+  // height: 100%;
+  font-family: "Heebo", sans-serif;
+  // overflow: hidden;
+}
+
+.header {
+  top: 10px;
+  left: 10px;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 10px;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+// footer {
+//   font-size: 1rem;
+//   position: absolute;
+//   bottom: 0.4rem;
+//   left: 1rem;
+//   text-align: left;
+//   padding: 1rem;
+// }

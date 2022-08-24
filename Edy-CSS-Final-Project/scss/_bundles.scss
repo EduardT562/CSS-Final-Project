@@ -1,0 +1,193 @@
+.bundles {
+  background: #fff;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+
+  & > h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #9a0f98;
+  }
+
+  .bundle-cards {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+
+    &__column {
+      flex-basis: 25%;
+      background: linear-gradient(to bottom, $primary-color, $secondary-color);
+      border-radius: 20px;
+      border: 1px solid #39065a;
+      margin-bottom: 5%;
+      padding: 20px 12px;
+      box-sizing: border-box;
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      & > h2 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        margin: 10px 10px;
+        color: #fff;
+      }
+
+      & > h3 {
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      // -------am pus un hover de Recommend fata de-------
+      &--recom {
+        position: relative;
+        overflow: hidden;
+        flex-basis: 25%;
+        background: linear-gradient(
+          to bottom,
+          $primary-color,
+          $secondary-color
+        );
+        border-radius: 20px;
+        border: 1px solid #39065a;
+        margin-bottom: 5%;
+        padding: 20px 20px;
+        box-sizing: border-box;
+        transition: transform 0.5s;
+
+        &::after {
+          content: "Recommended";
+          position: absolute;
+          top: 100%;
+          left: 0;
+          height: 8%;
+          width: 100%;
+          background: $secondary-color;
+          opacity: 0;
+          transition: all 0.5s ease-in-out;
+          color: #ea0599;
+          font-weight: 700;
+          text-align: center;
+          padding-bottom: 5px;
+        }
+
+        &:hover {
+          transform: scaleY(1.2);
+
+          &::after {
+            top: 0px;
+            opacity: 0.9;
+          }
+          .recom {
+            opacity: 1;
+          }
+        }
+
+        & > h2 {
+          text-align: center;
+          font-weight: 700;
+          font-size: 20px;
+          margin: 10px 10px;
+          color: #fff;
+        }
+
+        & > h3 {
+          text-align: center;
+          color: #fff;
+          font-size: 18px;
+          font-weight: 700;
+        }
+
+        & > ul {
+          text-align: start;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 300;
+          list-style-image: url(../dist/img/section7_check-mark.png);
+          padding-inline-start: 1ch;
+          list-style-position: inside;
+          margin-left: 100px;
+        }
+
+        & > a {
+          text-align: center;
+          font-weight: 700;
+          font-size: 20px;
+          color: #fff;
+          text-decoration: none;
+          background-color: transparent;
+          border-radius: 28px;
+          border: 1px transparent #e858ae;
+          display: inline-block;
+          cursor: pointer;
+          font-family: "Heebo";
+          font-size: 20px;
+          padding: 8px 31px;
+          text-decoration: none;
+          // margin-right: 15px;
+          transition: transform 0.5;
+
+          &:hover {
+            background-color: #e858ae;
+            color: rgba(255, 255, 255, 1);
+            box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+          }
+
+          &:active {
+            position: relative;
+            top: 1px;
+          }
+        }
+      }
+
+      & > ul {
+        text-align: start;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 300;
+        list-style-image: url(../dist/img/section7_check-mark.png);
+        padding-inline-start: 140px;
+        list-style-position: inside;
+        margin-bottom: 20px;
+      }
+
+      & > a {
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        background-color: transparent;
+        border-radius: 28px;
+        border: 1px transparent #e858ae;
+        display: inline-block;
+        cursor: pointer;
+        font-family: "Heebo";
+        font-size: 20px;
+        padding: 8px 31px;
+        text-decoration: none;
+        // margin-right: 15px;
+        transition: transform 0.5;
+
+        &:hover {
+          background-color: #e858ae;
+          color: rgba(255, 255, 255, 1);
+          box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+        }
+
+        &:active {
+          position: relative;
+          top: 1px;
+        }
+      }
+    }
+  }
+}
